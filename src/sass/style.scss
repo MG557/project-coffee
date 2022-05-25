@@ -1,16 +1,32 @@
 // normalize default styles
 @import "pages/normalize";
 // Bootstrap
-//@import "bootstrap/forms";
-@import "bootstrap/helpers";
+// Configuration
+@import "bootstrap/functions";
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
-@import "bootstrap/vendor";
+/*
+@import "bootstrap/forms/";
+@import "bootstrap/helpers/.";
+@import "bootstrap/mixins/.";
+@import "bootstrap/utilities/.";
+@import "bootstrap/vendor/.";
+*/
+// Layout & components
 @import "bootstrap/grid";
 @import "bootstrap/images";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
+@import "bootstrap/carousel";
+@import "bootstrap/containers";
+@import "bootstrap/buttons";
 
+// Helpers
+@import "bootstrap/helpers";
+
+// Utilities
+@import "bootstrap/utilities/api";
 
 // variables
 @import "pages/variables";
@@ -23,3 +39,4 @@
 @import "pages/home";
 @import "pages/products";
 @import "pages/contact";
+
