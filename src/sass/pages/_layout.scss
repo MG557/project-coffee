@@ -1,9 +1,174 @@
 .header {
-    margin: 5px;
-    padding: 5px;
-    //background-image: url(/project-coffee/src/images/background.png);
-    background-color: pink;
-    background-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: auto;
+  //padding-bottom: 100px;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  //background-color: pink;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+
+  .conteiner {
+    margin: 0;
+    padding: 0;
+
+    .row {
+      text-align: center;
+    }
+  }
+  
+  
+  /*.nav {
+    flex-wrap: wrap;
+  }*/
+  
+
+  h1 {
+    //font-family: $color-light;
+    color: $color-light;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 140px;
+    margin-right: 140px;
+    letter-spacing: 12px;
+    word-spacing: 8px;
+    //display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: $color-light;
+      font-size: 18px;
+      //font-stretch: 150%;
+      word-spacing: 1px;
+      letter-spacing: 2px;
+      line-height: 1px;
+    }
+  }
     
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    list-style-type: none;
+  }
+
+  .nav-ul li a {
+    display: inline;
+    //color: $color-light;
+    color: lighten($color-dark, 70%);
+    font-family: $font-text;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  button {
+    background-color: transparent;
+    color: lighten($color-dark, 70%);
+    border: 0;
+    //display: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+}
+
+h2 {
+  //font-size: 80px;
+  color: $color-main;
+  margin-top: 60px;
+  margin-left: 140px;
+  margin-right: 80px;
+  margin-bottom: 0;
+  letter-spacing: 9px;
+  text-align: left;
+  word-spacing: 10px; 
+  //line-height: 20px;
+  
+}
+
+h2::after {
+  display: block;
+  position: absolute;
+  content: "";
+  margin-left: 170px;
+  margin-top: 40px;
+  width: 200px;
+  height: 5px;
+  background-color: $color-main;
+ 
+}
+
+h2:first-of-type::after {
+  display: none;
+}
+
+h2:last-of-type {
+  padding: 5px;
+  margin-top: 0px;
+  margin-left: 300px;
+  word-spacing: 14px; 
+
+}
+
+.icon {
+  margin-top: 140px;
+  text-align: center;
+
+  p {
+    margin-top: 15px;
+    padding-top: 0px;
+    text-align: center;
+    color: lighten($color-dark, 70%);
+    font-family: $font-text;
+    font-size: 20px;
+    letter-spacing: 2px;
+   
+  }
+
+  i img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
+    color: $color-light;
+    
+  }
+  
+}
+
+.Footer {
+  text-align: center;
+}
+
+/*nav styling*/
+/*nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}*/
+  
+@media screen and (max-width: 767px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    //text-align: left;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
 
 }

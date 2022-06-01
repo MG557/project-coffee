@@ -11,4 +11,5 @@ export const settings = {
     home: 'home',
     
   },
+  
 };
