@@ -19,7 +19,7 @@
       <div class="row">
         <div class="navbar">
           <h1 class="h1">EL TIGRE<br><span>VENEZUELA COFFEE BEANS</span></h1>
-          <!--<button typ="button" class="hamburger" id="hamburger"><i class="fas fa bars"></i></button>-->
+          <button type="button" class="hamburger" id="hamburger"><i class="fas fa bars"></i></button>
           <ul class="nav-ul justify-content-center" id="nav-ul">
             <li><a href="#home">HOME</a></li>
             <li><a href="#products">PRODUCTS</a></li>
@@ -34,43 +34,97 @@
       <div class="icon" id="icon">
         <p>DISCOVER</p>
         <br>
-        <i><img src="./vendor/circle-down-regular.svg" alt="arrow"></i>
+        <i class="icon-arrow"></i>
       </div>
     </div>
   </section>
-  <section class="Products">
-    <div class="container" id="containerProducts">
-      <div class="row" id="productTitle">
-        <h2>PRODUCTS</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-6 product-text">Lorem ipsum - text 1, Loren ipsum - text 1,Loren ipsum-text 1</div>
-        <div class="col-6 product-img"><img src="images/coffee-1.png" alt="coffee1"></div>
-        <div class="w-100"></div>
-        <div class="col-6 product-img"><img src="images/coffee-2.png" alt="coffee2"></div>
-        <div class="col-6 product-text">Lorem ipsum - text 2, Loren ipsum - text 2, Loren ipsum-text 2</div>
-        <div class="col-6 product-text">Lorem ipsum - text 3, Loren ipsum - text 3, Loren ipsum-text 3</div>
-        <div class="col-6 product-img"><img src="images/coffee-3.png" alt="coffee3"></div>
-      </div>
+  <scrip id="template-home-page" type="text/x-handlebars-template">
+    <div container class="home-Page">
+      <section class="Products">
+        <div class="container" id="containerProducts">
+          <div class="row" id="productTitle">
+            <h2>PRODUCTS</h2>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-6 product-text">
+                <h4>Title 1</h4>
+                <div>
+                  <h3>Lorem ipsum - text 1, Loren ipsum - text 1,Loren ipsum-text 1</h3>
+                </div>
+                <div>
+                  <div class="row scorring">
+                    <div class="col-6">
+                      <p><span>ROASTING:</span> 5/10</p>
+                      <p><span>INTENSITY:</span> 6/10</p>
+                    </div>
+                    <div class="col-6">
+                      <img src="images/circle-down-regular.svg" alt="Laur">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 product-img"><img src="images/coffee-1.png" alt="coffee1"></div>
+              <div class="col-6 product-img"><img src="images/coffee-2.png" alt="coffee2"></div>
+              <div class="col-6 product-text">
+                <h4>Title 2</h4>
+                <div>
+                  <h3>Lorem ipsum - text 2, Loren ipsum - text 2,Loren ipsum-text 2</h3>
+                </div>
+                <div>
+                  <div class="row scorring">
+                    <div class="col-6">
+                      <p><span>ROASTING:</span> 8/10</p>
+                      <p><span>INTENSITY:</span> 9/10</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 product-text">
+                <h4>Title 3</h4>
+                <div>
+                  <h3>Lorem ipsum - text 3, Loren ipsum - text 3,Loren ipsum-text 3</h3>
+                </div>
+                <div>
+                  <div class="row scorring">
+                    <div class="col-6">
+                      <p><span>ROASTING:</span> 3/10</p>
+                      <p><span>INTENSITY:</span> 7/10</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 product-img"><img src="images/coffee-3.png" alt="coffee3"></div>
+          </div>
+        </div>
+      </section>
+      <section class="col About-us">
+        <div class="container" id="containerAbout">
+          <h2>ABOUT US</h2>
+          <p>Who we are?  Just a bunch of friends with
+            <br>
+             a love for a good coffee and desire to create
+            <br> something new, something original.</p>
+          <p>Our coffees reflect us - young, wild and free
+          <br>We are on the journey of new tates...
+          <br>
+          </p>
+          <p>Join us!</p>
+        </div>
+      </section>
+      <section class="Footer">
+        <p>&copy; 2022 EL TIGRE inc.</p>
+      </section>
     </div>
-  </section>
-  <section class="About-us">
-    <div class="container" id="containerAbout">
-      <h2>ABOUT US</h2>
-      <p>Who we are?  Just a bunch of friends with
-        <br>
-         a love for a good coffee and desire to create
-        <br> something new, something original.</p>
-      <p>Our coffees reflect us - young, wild and free
-      <br>We are on the journey of new tates...
-      <br>
-      <span>Join us!</span>
-      </p>
+  </scrip>
+  <scrip id="template-product-page" type="text/x-handlebars-template">
+    <div container class="product-Page">
     </div>
-  </section>
-  <section class="Footer">
-    <p>&copy; 2022 EL TIGRE inc.</p>
-  </section>
+  </scrip>
+  <scrip id="template-contact-page" type="text/x-handlebars-template">
+    <div container class="contact-Page">
+    </div>
+  </scrip>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/app.js" type="module"></script>
 </body>

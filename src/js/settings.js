@@ -11,5 +11,26 @@ export const settings = {
     home: 'home',
     
   },
+};
+
+export const templates = {
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
+ 
+  productPage: Handlebars.compile(document.querySelector(select.templateOf.productPage).innerHTML),
   
+  contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
+};
+
+export const select = {
+  templateOf: {
+    homePage: '#template-home-page',
+    productPage: '#template-product-page', 
+    contactPage: '#template-contact-page',
+    //homePage: '#template-home-page',
+  },
+  containerOf: {
+    homeP: '.home-Page',
+    productP: '.product-Page',
+    contactP: '.contact-Page',
+  }
 };
