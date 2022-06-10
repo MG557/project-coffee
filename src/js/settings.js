@@ -9,16 +9,7 @@ export const settings = {
     products: 'products',
     contact: 'contact',
     home: 'home',
-    
   },
-};
-
-export const templates = {
-  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
- 
-  productPage: Handlebars.compile(document.querySelector(select.templateOf.productPage).innerHTML),
-  
-  contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
 };
 
 export const select = {
@@ -39,7 +30,7 @@ export const select = {
   },
   nav: {
     links: '.nav-ul a',
-    homeLinks: '.home-Page'
+    homeLinks: '.home-Page',
   },
 };
 export const classNames = {
@@ -51,4 +42,11 @@ export const classNames = {
     active: 'active',
   },
 
+};
+export const templates = {
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
+ 
+  productPage: Handlebars.compile(document.querySelector(select.templateOf.productPage).innerHTML),
+  
+  contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
 };

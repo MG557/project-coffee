@@ -1,4 +1,4 @@
-import { settings, select , classNames } from '../settings.js';
+import { settings, select , classNames } from './settings.js';
 import Home from './components/home.js';
 
 const app = {

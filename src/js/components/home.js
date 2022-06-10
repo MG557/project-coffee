@@ -17,7 +17,7 @@ class Home {
     /* create element using utils.createElementFromHTML */
     thisHome.element = utils.createDOMFromHTML(generatedHTML);
     /* find menu container */
-    const homeContainer = document.querySelector(select.containerOf.homeP);
+    const homeContainer = document.querySelector(select.containerOf.home);
     /* add element to menu */
     homeContainer.appendChild(thisHome.element);   
     
