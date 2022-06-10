@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-import {select, templates,} from '../settings.js';
-import utils from '../utils.js';
+import {select, templates } from './settings.js';
+import utils from './utils.js';
 
 
 class Products {
@@ -17,7 +17,7 @@ class Products {
     /* create element using utils.createElementFromHTML */
     thisProducts.element = utils.createDOMFromHTML(generatedHTML);
     /* find menu container */
-    const productsContainer = document.querySelector(select.containerOf.productP);
+    const productsContainer = document.querySelector(select.containerOf.productList);
     /* add element to menu */
     productsContainer.appendChild(thisProducts.element);   
     
