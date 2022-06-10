@@ -38,7 +38,19 @@
       </div>
     </div>
   </section>
-  <scrip id="template-home-page" type="text/x-handlebars-template">
+  <div id="pages">
+    <section id="home">
+      <div id="home-id" class="home-wrapper container">
+      </div>
+    </section>
+    <section id="product">
+      <div id="product-list" class="product-list container"></div>
+    </section>
+    <section id="contact">
+      <div class="contact-wrapper container"></div>
+    </section>
+  </div>
+  <script id="template-home-page" type="text/x-handlebars-template">
     <div container class="home-Page">
       <section class="Products">
         <div class="container" id="containerProducts">
@@ -115,15 +127,15 @@
         <p>&copy; 2022 EL TIGRE inc.</p>
       </section>
     </div>
-  </scrip>
-  <scrip id="template-product-page" type="text/x-handlebars-template">
+  </script>
+  <script id="template-product-page" type="text/x-handlebars-template">
     <div container class="product-Page">
     </div>
-  </scrip>
-  <scrip id="template-contact-page" type="text/x-handlebars-template">
+  </script>
+  <script id="template-contact-page" type="text/x-handlebars-template">
     <div container class="contact-Page">
     </div>
-  </scrip>
+  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/app.js" type="module"></script>

@@ -32,5 +32,23 @@ export const select = {
     homeP: '.home-Page',
     productP: '.product-Page',
     contactP: '.contact-Page',
-  }
+    pages: '#pages',
+    productList:'#product-list',
+    contact: '.contact-wrapper',
+    home: '.home-wrapper', 
+  },
+  nav: {
+    links: '.nav-ul a',
+    homeLinks: '.home-Page'
+  },
+};
+export const classNames = {
+  nav: {
+    active: 'active',
+  },
+
+  pages: {
+    active: 'active',
+  },
+
 };

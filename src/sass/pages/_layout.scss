@@ -16,6 +16,7 @@
     margin: 0 auto;
     border: 5px solid;
     border-color: yellow;
+
     .row {
       text-align: center;
       margin: 0;
@@ -69,14 +70,14 @@
     padding: 15px;
   }
 
-    button {
-      background-color: transparent;
-      color: lighten($color-dark, 70%);
-      border: 0;
-      //display: none;
-      cursor: pointer;
-      font-size: 20px;
-    }
+  button {
+    background-color: transparent;
+    color: lighten($color-dark, 70%);
+    border: 0;
+    //display: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
 
   h2 {
     //font-size: 80px;
@@ -93,20 +94,20 @@
   }
 
   h2::after {
-  display: block;
-  justify-items: center;
-  position: absolute;
-  content: "";
-  margin-left: 170px;
-  margin-top: 40px;
-  width: 200px;
-  height: 5px;
-  background-color: $color-main;
+    display: block;
+    justify-items: center;
+    position: absolute;
+    content: "";
+    margin-left: 170px;
+    margin-top: 40px;
+    width: 200px;
+    height: 5px;
+    background-color: $color-main;
  
   }
 
   h2:first-of-type::after {
-  display: none;
+    display: none;
   }
 
   h2:last-of-type {
@@ -118,30 +119,30 @@
   }
 
   .icon {
-  margin-top: 140px;
-  text-align: center;
-  font-size: 50px;
+    margin-top: 140px;
+    text-align: center;
+    font-size: 50px;
 
     p {
-    margin-top: 15px;
-    padding-top: 0px;
-    text-align: center;
-    color: lighten($color-dark, 70%);
-    font-family: $font-text;
-    font-size: 20px;
-    letter-spacing: 2px;
+      margin-top: 15px;
+      padding-top: 0px;
+      text-align: center;
+      color: lighten($color-dark, 70%);
+      font-family: $font-text;
+      font-size: 20px;
+      letter-spacing: 2px;
    
     }
 
     .icon-arrow {
-    margin-top: 5px;
-    margin-bottom: 100px;
-    //background-color: transparent;
-    background-color: red;
-    size: 60px;
-    height: 60px;
-    width: 60px;
-    color: $color-light;
+      margin-top: 5px;
+      margin-bottom: 100px;
+      //background-color: transparent;
+      background-color: red;
+      size: 60px;
+      height: 60px;
+      width: 60px;
+      color: $color-light;
     
     
     }

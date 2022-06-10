@@ -27,10 +27,12 @@
 
 .Products .container .row {
   margin-top: 40px;
+
   .row {
     text-align: center;
     align-items: center;
   }
+
   h2 {
    
     font-size: 75px;
@@ -82,6 +84,7 @@
     color: $color-main;
     padding-top: 50px;
   }
+
   h2::after {
     display: block;
     //flex-direction: column;
@@ -95,7 +98,7 @@
     background-color: $color-main;
   }
 
-   p {
+  p {
     font-family: $font-header;
     font-size: 30px;
     color: $color-light;
@@ -109,6 +112,7 @@
     
     
   }
+
   p:last-of-type {
     border: 5px solid;
     border-color: yellow;
@@ -116,6 +120,7 @@
     //align-items: flex-end;
   }
 }
+
 img {
   border: 8px solid;
   //margin: 0;
@@ -126,6 +131,7 @@ img {
   //size: 20px 20px;
   
 }
+
 .product-text {
   text-align: left;
 }
