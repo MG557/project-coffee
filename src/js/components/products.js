@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-import {select, templates } from './settings.js';
-import utils from './utils.js';
+import {select, templates } from '../settings.js';
+import utils from '../utils.js';
 
 
 class Products {

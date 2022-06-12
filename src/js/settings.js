@@ -24,13 +24,13 @@ export const select = {
     productP: '.product-Page',
     contactP: '.contact-Page',
     pages: '#pages',
-    productList:'#product-list',
+    productList: '#product-list',
     contact: '.contact-wrapper',
     home: '.home-wrapper', 
   },
   nav: {
     links: '.nav-ul a',
-    homeLinks: '.home-Page',
+    homeLinks: '.home-Page a',
   },
 };
 export const classNames = {

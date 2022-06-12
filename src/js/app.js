@@ -1,5 +1,7 @@
 import { settings, select , classNames } from './settings.js';
 import Home from './components/home.js';
+import Product from './components/products.js';
+import Contact from './components/contact.js';
 
 const app = {
 
@@ -32,6 +34,7 @@ const app = {
         
         /* run thisApp.activatePage with that id */
         thisApp.activatePage(id);
+        console.log('activatePage', thisApp.activatePage(id));
 
         /* change URL hash */
         window.location.hash = '#/' + id;
@@ -59,15 +62,18 @@ const app = {
 
   
   initData: function() {
+    const thisApp = this;
+    thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.products;
-    this.data = {};
+   
     fetch(url)
       .then((rawResponse) => {
         return rawResponse.json();
       })
       .then((parsedResponse) => {
-        this.data.products = parsedResponse;
+        thisApp.data.products = parsedResponse;
       });
+    thisApp.initProducts();
   },
 
   initHeader: function() {
@@ -85,13 +91,26 @@ const app = {
     const homeElem = document.querySelector(select.containerOf.home);
     thisApp.home = new Home(homeElem);
   },
+  initProducts: function(){
+    const thisApp = this;
+    for(let productData in thisApp.data.products){
+    //new Product(productData, thisApp.data.products[productData]);
+      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+    }
+  },
+  initContact(){
+    const thisApp = this;
+    const contactElem = document.querySelector(select.containerOf.contact);
+    thisApp.contact = new Contact(contactElem);
+  },
 
   init: function() {
     const thisApp = this;
     thisApp.initHome();
-    this.initPages();
+    thisApp.initPages();
     thisApp.initData();
     thisApp.initHeader();
+    thisApp.initContact();
   },
 };
 
