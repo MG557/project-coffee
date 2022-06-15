@@ -1,0 +1,66 @@
+.contact-Page {
+  border: 8px solid yellow;
+  text-align: center;
+  height: 800px;
+
+  h2 {
+    text-align: center;
+    color: $color-main;
+    padding-top: 50px;
+    border: 6px solid red;
+    font-weight: bold;
+  }
+    
+  h2::after {
+    display: block;
+    //flex-direction: column;
+    justify-items: center;
+    //position: absolute;
+    content: "";
+    margin-left: 25%;
+    margin-top: 30px;
+    width: 50%;
+    height: 5px;
+    background-color: $color-main;
+  }
+      
+}
+
+.form {
+  line-height: 50px;
+}
+
+.form-group {
+  border: 8px solid green;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 10px;
+    
+  padding-bottom: 50px;
+
+  input {
+    margin: 10px 0px 10px 0px;
+    width: 35%;
+    height: 40%;
+    border: 2px solid;
+    line-height: 50px;
+    font-size: 16px;
+    height: 40px;
+        
+  }
+
+  button {
+    background-color: $color-main;
+    border: 0;
+    padding: 15px 20px 15px 20px;
+    width: 200px;
+    height: 80px;
+    font-weight: bold;
+    letter-spacing: 8px; 
+  }
+
+  #message {
+    height: 140px;
+    font-size: 16px;
+  }
+}

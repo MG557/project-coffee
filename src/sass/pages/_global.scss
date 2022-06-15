@@ -12,6 +12,16 @@ body {
   //font-weight: $font-normal;
   //color: $color-dark;
 }
+
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
   
 
 
