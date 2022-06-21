@@ -25,9 +25,9 @@ h2 {
     
 h3 {
   font-family: $font-text;
-  font-size: 14px;
+  font-size: 16px;
   //font-weight: $font-bold;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 
 h4 {
@@ -35,4 +35,14 @@ h4 {
   font-weight: bold;
   font-family: $font-text;
   letter-spacing: 2px;
+}
+
+h5 {
+  font-family: $font-text;
+  font-size: 30px;
+  color: $color-light;
+}
+
+h6 {
+  font-family: $font-worker;
 }

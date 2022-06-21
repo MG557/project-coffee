@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
+  <link rel="stylesheet" href="vendor/range-slider.min.css">
   <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -29,8 +31,28 @@
           </div>
         </div>
         <div class="row card-title">
-        <h2>HOME OF</h2>
-        <h2>ORIGINAL TASTES</h2>
+          <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true, "prevNextButtons": false, "pageDots": false }'>
+            <div class="carousel-cell">
+              <div class="carousel-description">
+                <h2>HOME OF</h2>
+                <h2>ORIGINAL TASTES</h2>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="carousel-description">
+                <h2>REAL VENEZUELA,</h2>
+                <h2>REAL COFFEE</h2>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="carousel-card">
+                <div class="carousel-description">
+                  <h2>TASTE REAL</h2>
+                  <h2>VENEZUELA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="icon" id="icon">
         <p>DISCOVER</p>
@@ -43,7 +65,7 @@
       <section id="home">
       <div id="home-id" class="home-wrapper container"></div>
       </section>
-      <section id="product">
+      <section id="products">
       <div id="product-list" class="product-list container"></div>
       </section>
       <section id="contact">
@@ -58,10 +80,10 @@
             <h2>PRODUCTS</h2>
           </div>
           <div class="row justify-content-center">
-              <div class="col-6 product-text">
+              <div class="col-6 product-text" id="left-1">
                 <h4>01. LA LAGARTIJA</h4>
                 <div>
-                  <h3>Lorem ipsum - text 1, Loren ipsum - text 1,Loren ipsum-text 1</h3>
+                  <h3>Mysterious and treacherous... The best choice for the start of your journey! It will provaid you a rich delicious flavor.</h3>
                 </div>
                 <div>
                   <div class="row scorring">
@@ -72,33 +94,33 @@
                       </strong>
                     </div>
                     <div class="col-6 img-medal">
-                      <img src="images/Number-1-icon.png" alt="">
+                      <img src="images/medal.png" alt="">
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-6 product-img"><img src="images/coffee-1.png" alt="coffee1"></div>
-              <div class="col-6 product-img"><img src="images/coffee-2.png" alt="coffee2"></div>
-              <div class="col-6 product-text">
-                <h4>02. EL TIGRE</h4>
-                <div>
-                  <h3>Lorem ipsum - text 2, Loren ipsum - text 2,Loren ipsum-text 2</h3>
-                </div>
-                <div>
-                  <div class="row scorring">
-                    <div class="col-6">
-                      <strong>
-                        <p><span>ROASTING:</span> 8/10</p>
-                        <p><span>INTENSITY:</span> 9/10</p>
-                      </strong>
+              <div class="col-6 product-img" id="right-2"><img src="images/coffee-1.png" alt="coffee1"></div>
+                <div class="col-6 product-text" id="left-4">
+                  <h4>02. EL TIGRE</h4>
+                  <div>
+                    <h3>Really dark coffee, only for the gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.</h3>
+                  </div>
+                  <div>
+                    <div class="row scorring">
+                      <div class="col-6">
+                        <strong>
+                          <p><span>ROASTING:</span> 8/10</p>
+                          <p><span>INTENSITY:</span> 9/10</p>
+                        </strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-6 product-text">
+                <div class="col-6 product-img" id="right-3"><img src="images/coffee-2.png" alt="coffee2"></div>
+              <div class="col-6 product-text" id="left-5">
                 <h4>03. LA CUCARACHA</h4>
                 <div>
-                  <h3>Lorem ipsum - text 3, Loren ipsum - text 3,Loren ipsum-text 3</h3>
+                  <h3>Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It`s great choice for warm summer days.</h3>
                 </div>
                 <div>
                   <div class="row scorring">
@@ -111,22 +133,48 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 product-img"><img src="images/coffee-3.png" alt="coffee3"></div>
+              <div class="col-6 product-img" id="right-6"><img src="images/coffee-3.png" alt="coffee3"></div>
           </div>
         </div>
       </section>
       <section class="col About-us">
         <div class="container" id="containerAbout">
           <h2>ABOUT US</h2>
-          <p>Who we are?  Just a bunch of friends with
-            <br>
-             a love for a good coffee and desire to create
-            <br> something new, something original.</p>
-          <p>Our coffees reflect us - young, wild and free
-          <br>We are on the journey of new tates...
-          <br>
-          </p>
-          <p>Join us!</p>
+          <div class="main-carousel" id="worker" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false  }'>
+            <div class="carousel-cell">
+              <div class="carousel-card">
+                <div class="carousel-image">
+                  <img src="images/worker-3.png">
+                </div>
+                <div class="carousel-description">
+                  <h5 class="carousel-tittle">Elizabeth <strong>Doherty</strong></h5>
+                  <p>Experienced barista from Bahamas. She says that Venezuela has opened her eyes on coffee. "It's not about the taste", she says. "It`s all about the feelings".</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="carousel-card">
+                <div class="carousel-image">
+                  <img src="images/worker-2.png">
+                </div>
+                <div class="carousel-description">
+                  <h5 class="carousel-tittle">Max <strong>Selfish</strong></h5>
+                  <p>Max is the austrian barista with years of experience from the hotels across the whole Europe. "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!", he says.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="carousel-card">
+                <div class="carousel-image">
+                  <img src="images/worker-1.png">
+                </div>
+                <div class="carousel-description">
+                  <h5 class="carousel-tittle">Ping <strong>Nihao</strong></h5>
+                  <p>Ping is the youngest in the team. He doesn't like calling a mysterious act. he says, a good coffee is like a mathematical formula. Once you figured it out, every coffee you make is a masterpiece.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="Footer">
@@ -142,60 +190,60 @@
               <h2>PRODUCTS</h2>
             </div>
             <div class="row justify-content-center">
-                <div class="col-6 product-text">
-                  <h4>01. LA LAGARTIJA</h4>
+                <div class="col-6 product-text" id="left-1">
+                  <h4>{{ title }}</h4>
                   <div>
-                    <h3>Lorem ipsum - text 1, Loren ipsum - text 1,Loren ipsum-text 1</h3>
+                    <h3>{{ description }}</h3>
                   </div>
                   <div>
                     <div class="row scorring">
                       <div class="col-6">
                         <strong>
-                          <p><span>ROASTING:</span> 5/10</p>
-                          <p><span>INTENSITY:</span> 6/10</p>
+                          <p><span>ROASTING:</span> {{ roasting }}/10</p>
+                          <p><span>INTENSITY:</span>{{ intensity }}/10</p>
                         </strong>
                       </div>
                       <div class="col-6 img-medal">
-                        <img src="images/Number-1-icon.png" alt="">
+                        <img src="{{ most-popular-icon }}" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-6 product-img"><img src="images/coffee-1.png" alt="coffee1"></div>
-                <div class="col-6 product-img"><img src="images/coffee-2.png" alt="coffee2"></div>
-                <div class="col-6 product-text">
-                  <h4>02. EL TIGRE</h4>
+                <div class="col-6 product-img" id="right-2"><img src="{{ img }}" alt="coffee1"></div>
+                <div class="col-6 product-text" id="left-4">
+                    <h4>{{ title }}</h4>
+                    <div>
+                      <h3>{{ description }}</h3>
+                    </div>
+                    <div>
+                      <div class="row scorring">
+                        <div class="col-6">
+                          <strong>
+                            <p><span>ROASTING:</span> {{ roasting }}/10</p>
+                            <p><span>INTENSITY:</span> {{ intensity }}/10</p>
+                          </strong>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-6 product-img" id="right-3"><img src="{{ img }}" alt="coffee2"></div>
+                <div class="col-6 product-text" id="left-5">
+                  <h4>{{ title }}</h4>
                   <div>
-                    <h3>Lorem ipsum - text 2, Loren ipsum - text 2,Loren ipsum-text 2</h3>
+                    <h3>{{ description }}</h3>
                   </div>
                   <div>
                     <div class="row scorring">
                       <div class="col-6">
                         <strong>
-                          <p><span>ROASTING:</span> 8/10</p>
-                          <p><span>INTENSITY:</span> 9/10</p>
+                          <p><span>ROASTING:</span> {{ roasting }}/10</p>
+                          <p><span>INTENSITY:</span> {{ intensity }}/10</p>
                         </strong>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-6 product-text">
-                  <h4>03. LA CUCARACHA</h4>
-                  <div>
-                    <h3>Lorem ipsum - text 3, Loren ipsum - text 3,Loren ipsum-text 3</h3>
-                  </div>
-                  <div>
-                    <div class="row scorring">
-                      <div class="col-6">
-                        <strong>
-                          <p><span>ROASTING:</span> 3/10</p>
-                          <p><span>INTENSITY:</span> 7/10</p>
-                        </strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 product-img"><img src="images/coffee-3.png" alt="coffee3"></div>
+                <div class="col-6 product-img" id="right-6"><img src="{{ img }}" alt="coffee3"></div>
             </div>
           </div>
         </section>
@@ -232,6 +280,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="vendor/range-slider.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
 </html>

@@ -1,10 +1,11 @@
 /*Products*/
 .Products {
   margin: 40px 5px auto 5px;
-  //height: 100%;
+  height: 100%;
   //width: 100%;
-  border: 10px solid;
-  border-color: red;
+  border: 10px solid green;
+  gap: 50px;
+  
 
   .container{
     padding-top: 20px;
@@ -14,7 +15,7 @@
   .row {
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 110%;
     align-items: center;
   }
 
@@ -70,24 +71,27 @@
   h2::after {
     display: block;
     content: "";
-    width: 600px;
+    width: 60%;
     height: 5px;
     //margin-left: 10%;
     //margin-right: 25%;
-    margin-top: 10px;
-    margin-left: 22%;
+    margin: 0 auto;
+    //margin-top: 10px;
+    //margin-left: 22%;
     background-color: $color-main;
-    text-align: center;
-    align-items: center;
+    //text-align: center;
+    //align-items: center;
   }
 }
 /*gallery*/
 .row justify-content-center {
   background-color: pink;
   display: flex;
-  margin: 0;
+  margin: 20px;
   margin-left: 140px;
   margin-right: 140px;
+  margin-bottom: 40px;
+  
   
 }
 
@@ -104,7 +108,23 @@
   object-fit: cover;
   position: relative;
 
-  
+  /*.main-carousel {
+    border: 8px solid blueviolet;
+    //position: absolute;
+    &::after {
+      //display: block;
+      justify-items: center;
+      position: absolute;
+      content: "";
+      margin: 0 auto;
+      //margin-left: 12%;
+      margin-top: 40px;
+      width: 20%;
+      height: 5px;
+      background-color: $color-main;
+   
+    }
+  }*/
   h2 {
     text-align: center;
     color: $color-main;
@@ -117,8 +137,9 @@
     justify-items: center;
     //position: absolute;
     content: "";
-    margin-left: 25%;
-    margin-top: 40px;
+    margin: 0 auto;
+    //margin-left: 25%;
+    //margin-top: 40px;
     width: 50%;
     height: 5px;
     background-color: $color-main;
@@ -126,15 +147,16 @@
 
   p {
     font-family: $font-header;
-    font-size: 30px;
+    font-size: 20px;
+    font-size: solid;
     color: $color-light;
     border: 8px solid;
     border-color: green;
     margin-top: 50px;
-    padding-left: 20%;
+    padding-left: 0%;
     padding-right: 20%;
-    align-items: flex-end;
-    justify-content: right;
+    //align-items: flex-wrap;
+    //justify-content: right;
     
     
   }
@@ -142,16 +164,17 @@
   p:last-of-type {
     border: 5px solid;
     border-color: yellow;
-    text-align: right;
+    text-align: left;
     //align-items: flex-end;
   }
 }
+
 
 .product-img {
   //border: 8px solid green;
   //margin: 0;
   width: 500px;
-  height: 300px;
+  height: 350px;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 0px 0px 0px 0px;
@@ -161,7 +184,7 @@
   img {
     
     width: 480px;
-    height: 280px;
+    height: 350px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
@@ -173,19 +196,58 @@
   .cover{
     object-fit: fill;
   }
-  //size: 20px 20px;
   
 }
 
 .product-text {
   width: 500px;
-  height: 300px;
+  height: 350px;
   text-align: left;
   //border: 8px solid blueviolet;
-  margin: 5px 0px 5px 0px;
+  margin: 40px 0px 5px 0px;
   //margin-top: 5px;
   //margin-bottom: 5px;
+  
 }
+
+.justify-content-center{
+ 
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+}
+
+#left-1 { order: 1;}
+
+#right-2 { order: 2;}
+
+#right-3 { order: 3;}
+
+#left-4 { order: 4;}
+
+#left-5 {order: 5;}
+
+#right-6 {order: 6;}
+
+@media (max-width: 1218px) {
+  #left-1 { order: 1;}
+
+  #right-2 { order: 2;}
+
+  #right-3 { order: 4;}
+
+  #left-4 { order: 3;}
+
+  #left-5 {order: 5;}
+
+  #right-6 {order: 6;}
+}
+
 
 .scorring {
   color: $color-main;
