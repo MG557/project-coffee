@@ -41,6 +41,7 @@ export const classNames = {
   pages: {
     active: 'active',
   },
+  article: '.card-title',
 
 };
 export const templates = {

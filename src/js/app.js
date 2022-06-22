@@ -72,18 +72,30 @@ const app = {
       })
       .then((parsedResponse) => {
         thisApp.data.products = parsedResponse;
+        thisApp.initProducts();
       });
-    thisApp.initProducts();
   },
 
   initHeader: function() {
+    /*const myArray = [
+      "Article-1",
+      "Article-2",
+      "Article-3"
+    ];
     
+    const randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+    
+    document.body.innerHTML = randomItem;*/
+    
+
     const hamburger = document.getElementById('hamburger');
     const navUL = document.getElementById('nav-ul');
 
     hamburger.addEventListener('click',() => {
       navUL.classList.toggle('show');
     });
+
+    
   },
 
   initHome(){
@@ -107,9 +119,9 @@ const app = {
   init: function() {
     const thisApp = this;
     thisApp.initHome();
+    thisApp.initHeader();
     thisApp.initPages();
     thisApp.initData();
-    thisApp.initHeader();
     thisApp.initContact();
   },
 };

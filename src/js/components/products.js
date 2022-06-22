@@ -18,8 +18,10 @@ class Products {
     thisProducts.element = utils.createDOMFromHTML(generatedHTML);
     /* find menu container */
     const productsContainer = document.querySelector(select.containerOf.productList);
+    console.log("###PAGE", productsContainer);
     /* add element to menu */
     productsContainer.appendChild(thisProducts.element);   
+    console.log(productsContainer.appendChild(thisProducts.element));
     
     thisProducts.dom = {
       wrapper: element,
