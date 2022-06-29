@@ -1,3 +1,106 @@
+.right {
+  background: pink;
+
+  .product-text {order: 2;};
+
+  .product-img {order: 1;}
+  @media (max-width: 1208px) {
+    .product-text {order: 1;};
+
+    .product-img {order: 2;}
+  }
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  //align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border: 8px solid red;
+  width: 100%;
+  margin: 20px auto;
+  height: auto;
+  
+  border: 8px solid blueviolet;
+  //position: relative;
+  /*display: grid;
+    grid-template-row: repeat(2, 1fr);
+    grid-auto-rows: 12.5rem;
+    gap: 5px;
+    width: 100%;
+    height: 600px;
+    //max-width: 37.5rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;*/
+  
+    
+  
+  .product-text {
+    border: 6px solid yellow;
+
+    h3 {
+      border: 6px solid brown;
+      margin: -20px 0 0 30%;
+      width: 70%;
+    }
+
+    h4 {
+      border: 6px solid green;
+    }
+
+    .scorring-text {
+      padding-top: 10%;
+    }
+    
+  }
+
+  .product-img {
+    border: 6px solid green;
+    background: transparent;
+    z-index: 0;
+    position: relative;
+    justify-items: center;
+    align-items: justify-content-center;
+  }
+
+  .price {
+    background-color: $color-main;
+    margin: 0 auto;
+    width: 180px;
+    height: 120px;
+    background: linear-gradient(to top right , transparent 50%, transparent 0%, $color-main 50%, $color-main 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .current-price {
+    //padding-bottom: 60px;
+    //padding-right: 20px;
+    padding: 10px 10px 50px 0;
+    margin-right: 0;
+    margin-top: -20px;
+    font-size: 36px;
+  }
+
+  .previous-price {
+    margin-right: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: $color-light;
+    text-align: center;
+    text-decoration: line-through;
+    font-weight: normal;
+  }
+}
+
 .img-medal{
   img { 
     width: 150px;

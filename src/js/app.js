@@ -77,15 +77,16 @@ const app = {
   },
 
   initHeader: function() {
-    /*const myArray = [
-      "Article-1",
-      "Article-2",
-      "Article-3"
+    const myArray = [
+      '<h2>HOME OF</h2><br><h2>ORIGINAL TASTES</h2>',
+      '<h2>REAL VENEZUEL,</h2><br><h2>REAL COFFEE</h2>',
+      '<h2>TASTE REAL</h2><br><h2>VENEZUELA</h2>'
     ];
     
     const randomItem = myArray[Math.floor(Math.random()*myArray.length)];
     
-    document.body.innerHTML = randomItem;*/
+    document.getElementById('headerTitle').innerHTML = randomItem;
+    console.log('TITLE', document.getElementById('headerTitle').innerHTML);
     
 
     const hamburger = document.getElementById('hamburger');
@@ -107,7 +108,7 @@ const app = {
     const thisApp = this;
     for(let productData in thisApp.data.products){
     //new Product(productData, thisApp.data.products[productData]);
-      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+      new Product(thisApp.data.products[productData]);
     }
   },
   initContact(){

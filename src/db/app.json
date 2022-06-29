@@ -6,21 +6,37 @@
             "roasting": 5,
             "intensity": 6,
             "most-popular-icon": "images/medal.png",
-            "img":"images/coffee-1.png"
+            "medal":"Active",
+            "img":"images/coffee-1.png",
+            "previousPrice": 36,
+            "currentPrice": 25,
+            "dirClass": "left"
         },
         {
             "title": "02. EL TIGRE",
             "description": "Really dark coffee, only for the gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
             "roasting": 8,
             "intensity": 9,
-            "img":"images/coffee-2.png"
+            "most-popular-icon": "images/medal.png",
+            "medal": "",
+            "img":"images/coffee-2.png",
+            "previousPrice": 40,
+            "currentPrice": 31,
+            "dirClass": "right"
+            
         },
         {
             "title": "03. LA CUCARACHA",
             "description": "Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It`s great choice for warm summer days.",
             "roasting": 3,
             "intensity": 7,
-            "img":"images/coffee-3.png"
+            "most-popular-icon": "images/medal.png",
+            "medal": "",
+            "img":"images/coffee-3.png",
+            "previousPrice": 32,
+            "currentPrice": 19,
+            "dirClass": "left"
+            
         }
     ]
 }

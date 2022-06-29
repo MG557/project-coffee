@@ -31,7 +31,10 @@ export const select = {
   nav: {
     links: '.nav-ul a',
     homeLinks: '.home-Page a',
+
   },
+  
+
 };
 export const classNames = {
   nav: {

@@ -44,5 +44,18 @@ h5 {
 }
 
 h6 {
-  font-family: $font-worker;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: $font-text;
+  color: $color-light;
+}
+@media (max-width: 1230px){
+  h2 {
+    font-size: 50px;
+    font-family: $font-text;
+    //font-weight: $font-bold;
+    text-transform: uppercase;
+    text-align: left;
+    
+  }
 }

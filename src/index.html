@@ -30,23 +30,10 @@
             </ul>
           </div>
         </div>
-        <div class="row card-title">
-          <div class="article-1">
-            <h2>HOME OF<h2>
-            <h2>ORIGINAL TASTES</h2>
-          </div>
-          <div class="article-2">
-            <h2>REAL VENEZUELA,</h2>
-            <h2> REAL COFFEE</h2>
-          </div>
-          <div class="article-3">
-            <h2>TASTE REAL</h2>
-            <h2>VENEZUELA</h2>
-          </div>
-        </div>
+        <div class="row card-title" id="headerTitle"></div>
+        <div class="golden-block"></div>
         <div class="icon" id="icon">
         <p>DISCOVER</p>
-        <br>
         <i class="icon-arrow"></i>
         </div>
       </div>
@@ -56,7 +43,22 @@
       <div id="home-id" class="home-wrapper container"></div>
       </section>
       <section id="products">
-      <div id="product-list" class="product-list container"></div>
+        <div id="product-list" class="product-list container">
+          <div class="product-Page">
+            <section class="Products">
+              <div class="container" id="containerProducts">
+                <div class="row" id="productTitle">
+                  <h2>PRODUCTS</h2>
+                </div>
+                <div class="row justify-content-center">
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <section class="Footer">
+          <p>&copy; 2022 EL TIGRE inc.</p>
+        </section>
       </section>
       <section id="contact">
       <div class="contact-wrapper container"></div>
@@ -69,7 +71,7 @@
           <div class="row" id="productTitle">
             <h2>PRODUCTS</h2>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" id="homeProduct">
               <div class="col-6 product-text" id="left-1">
                 <h4>01. LA LAGARTIJA</h4>
                 <div>
@@ -130,7 +132,7 @@
       <section class="col About-us">
         <div class="container" id="containerAbout">
           <h2>ABOUT US</h2>
-          <div class="main-carousel" id="worker" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false  }'>
+          <div class="main-carousel" id="worker" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000, "prevNextButtons": false, "pageDots": false  }'>
             <div class="carousel-cell">
               <div class="carousel-card">
                 <div class="carousel-image">
@@ -173,73 +175,34 @@
       </div>
     </script>
     <script id="template-product-page" type="text/x-handlebars-template">
-      <div class="product-Page">
-        <section class="Products">
-          <div class="container" id="containerProducts">
-            <div class="row" id="productTitle">
-              <h2>PRODUCTS</h2>
+      <div class="product {{ dirClass }}">
+        <div class="col-6 product-text">
+          <div>
+            <h4>{{ title }}</h4>
+          </div>
+          <div>
+            <h3>{{ description }}</h3>
+          </div>
+          <div class="row scorring">
+            <div class="col-6 scorring-text">
+              <strong>
+                <p><span>ROASTING:</span> {{ roasting }}/10</p>
+                <p><span>INTENSITY:</span>{{ intensity }}/10</p>
+              </strong>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-6 product-text" id="left-1">
-                  <h4>{{ title }}</h4>
-                  <div>
-                    <h3>{{ description }}</h3>
-                  </div>
-                  <div>
-                    <div class="row scorring">
-                      <div class="col-6">
-                        <strong>
-                          <p><span>ROASTING:</span> {{ roasting }}/10</p>
-                          <p><span>INTENSITY:</span>{{ intensity }}/10</p>
-                        </strong>
-                      </div>
-                      <div class="col-6 img-medal">
-                        <img src="{{ most-popular-icon }}" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 product-img" id="right-2"><img src="{{ img }}" alt="coffee1"></div>
-                <div class="col-6 product-text" id="left-4">
-                    <h4>{{ title }}</h4>
-                    <div>
-                      <h3>{{ description }}</h3>
-                    </div>
-                    <div>
-                      <div class="row scorring">
-                        <div class="col-6">
-                          <strong>
-                            <p><span>ROASTING:</span> {{ roasting }}/10</p>
-                            <p><span>INTENSITY:</span> {{ intensity }}/10</p>
-                          </strong>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 product-img" id="right-3"><img src="{{ img }}" alt="coffee2"></div>
-                <div class="col-6 product-text" id="left-5">
-                  <h4>{{ title }}</h4>
-                  <div>
-                    <h3>{{ description }}</h3>
-                  </div>
-                  <div>
-                    <div class="row scorring">
-                      <div class="col-6">
-                        <strong>
-                          <p><span>ROASTING:</span> {{ roasting }}/10</p>
-                          <p><span>INTENSITY:</span> {{ intensity }}/10</p>
-                        </strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 product-img" id="right-6"><img src="{{ img }}" alt="coffee3"></div>
+            <div class="col-6 img-medal">
+              {{#if isActive}}
+              <img src="{{ most-popular-icon }}"  alt="{{ medal }}">
+              {{/if}}
             </div>
           </div>
-        </section>
-        <section class="Footer">
-          <p>&copy; 2022 EL TIGRE inc.</p>
-        </section>
+        </div>
+        <div class="col-6 product-img"><img src="{{ img }}" alt="coffee1">
+          <div class="price">
+            <h6 class="previous-price">{{ previousPrice }}$</h6>
+            <h6 class="current-price">{{ currentPrice }}$</h6>
+          </div>
+        </div>
       </div>
     </script>
     <script id="template-contact-page" type="text/x-handlebars-template">
@@ -269,6 +232,13 @@
       </div>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js">
+      Handlebars.registerHelper("if", function(conditional, options) {
+        if (true) {
+        return options.fn(this); 
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/range-slider.min.js"></script>
