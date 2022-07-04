@@ -3,14 +3,8 @@
 }
   
 body {
-  margin-left: 50px;
-  margin-right: 50px;
-  
-  //font-family: $font-text;
-  //font-size: 14px;
-  //line-height: 1.7;
-  //font-weight: $font-normal;
-  //color: $color-dark;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #pages {
@@ -21,8 +15,18 @@ body {
   > .active {
     display: block;
   }
+ 
 }
-  
 
+.img-medal {
+  display: none;
+
+}
+
+.img-medal.active {
+  display: block;
+}
+
+ 
 
   

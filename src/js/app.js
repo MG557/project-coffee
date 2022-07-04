@@ -89,14 +89,18 @@ const app = {
     console.log('TITLE', document.getElementById('headerTitle').innerHTML);
     
 
+   
+
+        
+  },
+  initHamburger(){
     const hamburger = document.getElementById('hamburger');
     const navUL = document.getElementById('nav-ul');
 
     hamburger.addEventListener('click',() => {
       navUL.classList.toggle('show');
     });
-
-    
+    console.log(hamburger);
   },
 
   initHome(){
@@ -121,9 +125,11 @@ const app = {
     const thisApp = this;
     thisApp.initHome();
     thisApp.initHeader();
+    thisApp.initHamburger();
     thisApp.initPages();
     thisApp.initData();
     thisApp.initContact();
+    
   },
 };
 

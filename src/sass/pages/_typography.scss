@@ -19,8 +19,9 @@ p {
 h2 {
   font-size: 76px;
   font-family: $font-text;
-  //font-weight: $font-bold;
+  font-weight: bold;
   text-transform: uppercase;
+  
 }
     
 h3 {
@@ -51,6 +52,7 @@ h6 {
 }
 @media (max-width: 1230px){
   h2 {
+    margin: 0 auto;
     font-size: 50px;
     font-family: $font-text;
     //font-weight: $font-bold;

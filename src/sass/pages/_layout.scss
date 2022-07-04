@@ -1,7 +1,6 @@
 .header {
   margin: 0 auto;
-  border: 5px solid;
-  border-color: red;
+  //border: 5px solid red;
   height: auto;
   padding-left: 10%;
   padding-right: 10%;
@@ -14,19 +13,16 @@
       margin: 0px 5px 0px 5px;
     }
   }
-  //padding-bottom: 100px;
   background-image: url(../images/background.png);
-  //background-color: pink;
   background-repeat: no-repeat;
-  //background-color: pink;
   background-size: cover;
   object-fit: cover;
   position: relative;
 
   .container {
     margin: 0 auto;
-    border: 5px solid;
-    border-color: yellow;
+    //border: 5px solid;
+    //border-color: yellow;
 
     .row {
       text-align: center;
@@ -36,29 +32,33 @@
   
 
   h1 {
-    //font-family: $color-light;
     color: $color-light;
     text-align: left;
     margin-top: 5px;
     margin: 0 auto;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 12%;
+    margin-right: 12%;
     letter-spacing: 12px;
     word-spacing: 8px;
-    //display: flex;
+    font-weight: bold;
     align-items: center;
     justify-content: space-between;
 
     span {
       color: $color-light;
       font-size: 18px;
-      //font-stretch: 150%;
       word-spacing: 1px;
       letter-spacing: 2px;
       line-height: 1px;
     }
   }
-    
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .nav-ul {
     display: flex;
     align-items: center;
@@ -68,49 +68,31 @@
   }
 
   .nav-ul li a {
-    display: inline;
-    //color: $color-light;
+    display: inline-block;
     color: lighten($color-dark, 70%);
     font-family: $font-text;
     text-decoration: none;
     padding: 15px;
   }
 
-  button {
+  #hamburger {
+    margin-bottom: 16px;
     background-color: transparent;
     color: lighten($color-dark, 70%);
     border: 0;
-    //display: none;
+    display: none;
     cursor: pointer;
     font-size: 20px;
   }
 
 
   h2 {
-    //font-size: 80px;
     color: $color-main;
-    //width: 800px;
-    margin: 80px 80px 0 140px;
+    margin: 80px 80px 0 12%;
     letter-spacing: 9px;
     text-align: left;
-    word-spacing: 10px; 
-    //line-height: 20px;
-    
-    
-    
-    /*&::after {
-      display: block;
-      justify-items: center;
-      //position: absolute;
-      content: "";
-      margin: 0 auto;
-      //margin-left: 12%;
-      margin-top: 40px;
-      width: 20%;
-      height: 5px;
-      background-color: $color-main;
-   
-    }*/
+    word-spacing: 10px;
+    font-size: 140%vw;
   }
 
   .golden-block {
@@ -123,24 +105,6 @@
     background-color: $color-main;
   }
 
-  /*.main-carousel {
-    border: 8px solid green;
-
-    &::after {
-      display: block;
-      justify-items: center;
-      //position: absolute;
-      content: "";
-      margin: 0 auto;
-      //margin-left: 12%;
-      margin-top: 40px;
-      width: 20%;
-      height: 5px;
-      background-color: $color-main;
-   
-    }
-  }*/
-  
   h2:first-of-type::after {
     display: none;
   }
@@ -148,8 +112,9 @@
   h2:last-of-type {
     padding: 5px;
     margin-top: 0px;
-    margin-left: 300px;
-    word-spacing: 14px; 
+    margin-left: 26%;
+    word-spacing: 14px;
+    font-size: 120%vw;
 
   }
 
@@ -173,7 +138,6 @@
       margin-top: 5px;
       margin-bottom: 150px;
       background-color: transparent;
-      //background-color: red;
       size: 60px;
       height: 60px;
       width: 60px;
@@ -188,28 +152,56 @@
   margin-top: 30px;
 }
 
-/*nav styling*/
-/*nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-}*/
-  
-@media (max-width: 1200px) {
-  .nav-ul {
+@media (max-width: 768px) {
+  #nav-ul {
     display: none;
     flex-direction: column;
     width: 100%;
-    //text-align: left;
+    text-align: left;
   }
 
-  .nav-ul.show {
+  ul#nav-ul.nav-ul.show {
     display: flex;
   }
 
-  .hamburger {
+  button#hamburger.hamburger {
     display: block;
   }
 
+  h1 {
+    color: $color-light;
+    text-align: left;
+    margin: 0 auto;
+    letter-spacing: 12px;
+    word-spacing: 8px;
+    align-items: center;
+
+    span {
+      color: $color-light;
+      font-size: 18px;
+      word-spacing: 1px;
+      letter-spacing: 2px;
+      line-height: 1px;
+    }
+  }
+  
+  h2 {
+    color: $color-main;
+    margin: 80px 80px 0 20px;
+    letter-spacing: 9px;
+    text-align: left;
+    word-spacing: 10px;
+  }
+
+  h2:first-of-type::after {
+    display: none;
+  }
+
+  h2:last-of-type {
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 20px;
+    word-spacing: 14px; 
+
+  }
 }
