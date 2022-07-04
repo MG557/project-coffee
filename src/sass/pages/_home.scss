@@ -86,7 +86,7 @@ h4::after {
   //border: 8px solid green;
   width: 500px;
   height: 350px;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 5px;
   padding: 0px 0px 0px 0px;
   object-fit: fill;
@@ -117,7 +117,8 @@ h4::after {
   height: 350px;
   text-align: left;
   //border: 8px solid blueviolet;
-  margin: 40px 0px 5px 0px; 
+  margin: 20px 0px 5px 0px;
+  padding-top: 10px; 
 }
 
 .scorring {
@@ -249,6 +250,7 @@ h4::after {
 }
 
 #homeProduct {
+  
   display: -ms-flexbox;
   display: -moz-flex;
   display: -webkit-flex;

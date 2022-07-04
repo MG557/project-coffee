@@ -29,10 +29,12 @@
   
   .product-text {
     //border: 6px solid yellow;
+    width: 100%vw;
+    margin: 20px 0 0 0;
 
     h3 {
       //border: 6px solid brown;
-      margin: -20px 0 0 30%;
+      margin: 5px 0 0 30%;
       width: 70%;
     }
 
@@ -68,9 +70,9 @@
     z-index: 1;
     text-align: right;
     font-weight: bold;
-    @media (max-width: 542px){
-       margin-right: 0px;
-     }
+    @media (max-width: 536px){
+      margin-right: 0px;
+    }
   }
 
   .current-price {
@@ -99,5 +101,3 @@
     max-width: 100%;
   }
 }
-
-
