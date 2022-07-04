@@ -58,7 +58,7 @@
   .price {
     background-color: $color-main;
     margin: 0 auto;
-    margin-right: 10px;
+    margin-right: 2%;
     width: 180px;
     height: 120px;
     background: linear-gradient(to top right , transparent 50%, transparent 0%, $color-main 50%, $color-main 100%);
@@ -68,6 +68,9 @@
     z-index: 1;
     text-align: right;
     font-weight: bold;
+    @media (max-width: 542px){
+       margin-right: 0px;
+     }
   }
 
   .current-price {
@@ -96,4 +99,5 @@
     max-width: 100%;
   }
 }
+
 
